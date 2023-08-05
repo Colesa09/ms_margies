@@ -1,0 +1,82 @@
+<DOCTYPE html>
+
+<html>
+	<head>
+		<title>Place Pie Order</title>
+		<link rel="stylesheet" type="text/css" href="Ms.MargiesStyle.css" />
+	</head>
+	<body>
+		<div class="textbackground">
+			<span><h1>Place Pie Order</h1> <button id="orderPageB"><a href="Ms.Margies.html">Return to Home</a></button></span>
+			<p id="orderIntro">Please fill out all fields below. An email confirmation will be sent to confirm we received your order. 
+			For any questions or changes to your order please contact us at (206) 293-9725</p>
+			<form action="http://Ms.Margies.html/placeorder" method="get" target="_top">
+				<fieldset>
+					<legend><h3>Pie Order Form</h3></legend>
+					<p><label>First Name: <input type="text" name="firstName" value=" " maxlength="20"/></label></p>
+					<p><label>Last Name: <input type="text" name="lastName" value=" " maxlength="20" /></label></p>
+					<p><label>Phone Number: <input type="text" name="phoneNumber" value=" " maxlength="10" /></label></p>
+					<p><label>Email: <input type="text" name="email" value=" " maxlength="50" /></label></p>
+					<p><label>Company Name (if applicable): <input type="text" name="companyName" value=" " maxlength="50" /></label></p>
+					<p><label>Company Website (if applicable): <input type="text" name="companyWebsite" value=" " maxlength="50" /></label></p>
+					<p>Number of Pies for Order:</p>
+					<p><label>9" Pie: </label><select name="number">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="1Dozen">1 Dozen</option>
+							<option value="2Dozen">2 Dozen</option>
+							<option value="3Dozen">3 Dozen</option>
+							<option value="4Dozen">4 Dozen</option>
+						</select>
+						<label>5" Pie: </label><select name="number">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="1Dozen">1 Dozen</option>
+							<option value="2Dozen">2 Dozen</option>
+							<option value="3Dozen">3 Dozen</option>
+							<option value="4Dozen">4 Dozen</option>
+						</select>
+						<label>3" Pie: </label><select name="number">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="1Dozen">1 Dozen</option>
+							<option value="2Dozen">2 Dozen</option>
+							<option value="3Dozen">3 Dozen</option>
+							<option value="4Dozen">4 Dozen</option>
+						</select></p>
+					<p><label>Available Pickup Time (required): <input type="text" name="pickupTime" value=" " maxlength="30" /></label></p>
+					<p><label>How did you find us? <input type="radio" name="findUs" value="Google" checked="checked" />Google <input type="radio" name="findUs" value="Facebook" />Facebook <input type="radio" name="findUs" value="Other" />Other</label></p> 
+					<p><label>Additional Notes</label><br><textarea name="notes" placeholder="Click to add notes..." rows="8" cols="40"></textarea></p>
+					<p><input type="submit" value="Order Pies" /></p>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>	
