@@ -5,7 +5,7 @@
 <head>
   <title>Ms. Margie's Sweet Potato Pies</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&family=Roboto&display=swap" rel="stylesheet">
   <meta name = "viewpoint" content ="width=device-width, initial-scale=1">
 </head>
 
@@ -29,96 +29,82 @@
 		<button><a href="#retail">Retail Locations</a></button>
 	</div>
 	</header>
-  <!-- buttons that link to other parts of the main page-->
-  <main>
-    
-  
+ 
+	<main>
+  <!--Left hand section of the body grid-->
 	<div class="pieOrderForm">
-		<h1>Place Pie Order</h1>
+		<h3 class="bodyHeader">Pie Order Form</h3>
 		<p id="orderIntro">Please fill out all fields below. An email confirmation will be sent to confirm we received your order. 
 		For any questions or changes to your order please contact us at (206) 293-9725. All orders must be placed 24-48 hours in advance.</p>
 		<form action="http://Ms.Margies.html/placeorder" method="get" target="_top">
-			<fieldset>
-				<legend><h3>Pie Order Form</h3></legend>
-				<p><label>First Name: <input type="text" name="firstName" value=" " maxlength="20"/></label></p>
-				<p><label>Last Name: <input type="text" name="lastName" value=" " maxlength="20" /></label></p>
-				<p><label>Phone Number: <input type="text" name="phoneNumber" value=" " maxlength="10" /></label></p>
-				<p><label>Email: <input type="text" name="email" value=" " maxlength="50" /></label></p>
-				<p><label>Company Name (if applicable): <input type="text" name="companyName" value=" " maxlength="50" /></label></p>
-				<p><label>Company Website (if applicable): <input type="text" name="companyWebsite" value=" " maxlength="50" /></label></p>
-				<p>Number of Pies for Order:</p>
-				<p><label>9" Pie: </label><select name="number">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="1Dozen">1 Dozen</option>
-						<option value="2Dozen">2 Dozen</option>
-						<option value="3Dozen">3 Dozen</option>
-						<option value="4Dozen">4 Dozen</option>
-					</select>
-					<label>5" Pie: </label><select name="number">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="1Dozen">1 Dozen</option>
-						<option value="2Dozen">2 Dozen</option>
-						<option value="3Dozen">3 Dozen</option>
-						<option value="4Dozen">4 Dozen</option>
-					</select>
-					<label>3" Pie: </label><select name="number">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="1Dozen">1 Dozen</option>
-						<option value="2Dozen">2 Dozen</option>
-						<option value="3Dozen">3 Dozen</option>
-						<option value="4Dozen">4 Dozen</option>
-					</select></p>
-				<p><label>Available Pickup Time (required): <input type="text" name="pickupTime" value=" " maxlength="30" /></label></p>
-				<p><label>How did you find us? <input type="radio" name="findUs" value="Google" checked="checked" />Google <input type="radio" name="findUs" value="Facebook" />Facebook <input type="radio" name="findUs" value="Other" />Other</label></p> 
-				<p><label>Additional Notes</label><br><textarea name="notes" placeholder="Click to add notes..." rows="8" cols="40"></textarea></p>
-				<p><input type="submit" value="Order Pies" /></p>
-			</fieldset>
+			<label for="fName">First Name:</label> 
+			<input type="text" name="firstName" id= "fName" maxlength="20"/>
+			<label for="lName">Last Name: </label>
+			<input type="text" name="lastName" id="lName" maxlength="20" />
+			<label for="pNumber">Phone Number: </label>
+			<input type="text" name="phoneNumber"  id="pNumber" maxlength="10" />
+			<label for="email">Email: </label>
+			<input type="text" name="email" id="email" maxlength="50" />
+			<label for="coName">Company Name (if applicable):</label> 
+			<input type="text" name="companyName" id="coName" value=" " maxlength="50" />
+
+			<label id="qAnds">Select Quantity and Sizes</label>
+			<label for="9" class="pSizeNum">9" Pie: </label>
+			<select name="number" id="9">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="1Dozen">1 Dozen</option>
+					<option value="2Dozen">2 Dozen</option>
+					<option value="3Dozen">3 Dozen</option>
+				</select>
+				<label for="5" class="pSizeNum">5" Pie: </label>
+				<select name="number" id="5">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="1Dozen">1 Dozen</option>
+					<option value="2Dozen">2 Dozen</option>
+					<option value="3Dozen">3 Dozen</option>
+				</select>
+				<label for="3" class="pSizeNum">3" Pie: </label>
+				<select name="number" id="3">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="1Dozen">1 Dozen</option>
+					<option value="2Dozen">2 Dozen</option>
+					<option value="3Dozen">3 Dozen</option>
+				</select>
+
+			<label for="addInfo" id="addNotes">Additional Notes</label>
+			<textarea name="notes" id="addInfo" placeholder="Click to add notes..." rows="8" cols="40"></textarea>
+			<input type="submit" value="Order Pies" />
+			
 		</form>
 	</div>
  <!--About our pies break starts on main page--> 
 	<div class="outerAboutBox">
 		<div class="about" id="aboutPies">
-			<h3>About Our Pies</h3>
+			<h3 class="bodyHeader">About Our Pies</h3>
 			<p class="aboutInfo">Ms. Margie's Sweet Potato Pies are made from an old Southern Family 
 			recipe that has been handed down through the generations. 
 			We use the freshest ingredients to make our pies special for you and your family.</p>
 		</div>
 
-		<div class="about" id="retail">
-			<h3>Retail Locations</h3>
-			<p>Ms. Margie's Sweet Potato Pies are available for pick up at:</p>
-			<p>Renton Uwajimaya Market<br> 501 S. Grady Way<br> Renton, WA 98057<br>Phone: (425) 277-1635</p>	
-		</div>
+		
 
 		<div class= "pieSizes">
 			<p class="description">Ms. Margie's offer three different sizes of pie.<br> From sizes big enough for the whole family, to individual sizes.</p>
@@ -130,17 +116,28 @@
 				<p>Try our 3" Sweet Potato Pie! Just enough for one person, but will leave you wanting for more!</p>
 		</div>
 	</div>
-</main>
+	</main>
 	
   
  
 <!--Facebook and Twitter widget go here-->
 	<footer class="socialMedia">
-		<h2 class="description">Follow us on our Social Media Platforms!</h2>
-		<a href="https://www.facebook.com/Ms.Margies.Sweet.Potato.Pies/" target="_blank"><img src="img/facebook_logo.png" alt="Facebook" class="icon" /></a><td>
-		<p class="companyInfo">Ms. Margie's Sweet Potato Pies<br>Richard Tynes<br>Phone (206) 293-9725<br>Fax (425) 227-6057<br>www.msmargies.com</p>
-		<p>Order pick up location is:<br> The Red Tea Room<br> 960-B Harrington Ave. NE<br>Renton, WA, 98056</p>
-		<a href="https://twitter.com/MsMargies" target="_blank"><img src="img/twitter_logo.png" alt="Twitter" class="icon" /></a>
+		<div>
+			<h3 class="description">Follow us on our Social Media Platforms!</h3>
+			<a href="https://www.facebook.com/Ms.Margies.Sweet.Potato.Pies/" target="_blank"><img src="img/facebook_logo.png" alt="Facebook" class="icon" /></a><td>
+			<a href="https://twitter.com/MsMargies" target="_blank"><img src="img/twitter_logo.png" alt="Twitter" class="icon" /></a>
+		</div>
+		
+		<div class="about" id="retail">
+			<h3 class="bodyHeader">Retail Locations</h3>
+			<p>Ms. Margie's Sweet Potato Pies are available for pick up at:</p>
+			<p>Renton Uwajimaya Market<br> 501 S. Grady Way<br> Renton, WA 98057<br>Phone: (425) 277-1635</p>	
+		</div>
+
+		<div>
+			<p class="companyInfo">Ms. Margie's Sweet Potato Pies<br>Richard Tynes<br>Phone (206) 293-9725<br>Fax (425) 227-6057<br>www.msmargies.com</p>
+			<p>Order pick up location is:<br> The Red Tea Room<br> 960-B Harrington Ave. NE<br>Renton, WA, 98056</p>
+		</div>
 	</footer>
 </body>
 
