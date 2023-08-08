@@ -55,27 +55,39 @@ footer {
     font-size: 22px;
     width: 300px;
     position: absolute;
-    top: 40px;
-    left: -20px;
+    top: 82px;
     z-index: 4;
-    transform: rotate(-45deg);
+    margin-left: 20px;
 }
 #subTitle {
 	font-family: 'Great Vibes';
     width: 200px;
     font-size: 20px;
-    position: relative;
-    top: 120px;
-    left: 50px;
-    transform: rotate(-50deg);
+    position: absolute;
+    top: 148px;
+    left: 80px;
+    transform: rotate(-10deg);
     z-index: 4;
 }
-.diamondTitle {
-	width: 250px;
-    height: 250px;
-    margin: 30px auto 0px;
+.outerCircle {
+	width: 350px;
+	height: 330px;
+	border-radius: 50%;
+	background-color: #E2C6A3;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 1;
+	left: 550px;
+}
+.circleTitle {
+	width: 300px;
+    height: 300px;
     background-color: #D09154;
-    transform: rotate(45deg);
+    border-radius: 50%;
+    position: relative;
+    top: 17px;
+    right: -26px;
+	z-index: 3;
 	
 }
 .backSquare {
@@ -83,22 +95,40 @@ footer {
 	height: 100px;
 	background-color: #C3721B;
 	position: absolute;
-	top: 100px;
-	z-index: 0;
+	top: 120px;
+    z-index: -1;
+}
+.addCircle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #D18838;
+	position: absolute;
+    z-index: -1;
+
+}
+.one {
+	left: 473px;
+    top: 70px;
+}
+.two {
+	right: 504px;
+	top: 70px;
 }
 /*End of header styling*/
 
 /*Styling for main section pie order form */
 .pieOrderForm {
 	width: 90%;
-    margin: 10px 20px;
+    margin-top: 10px; 
+	margin-left: 20px;
 }
 .about {
 	width: 80%;
 } 
 .bodyHeader {
 	font-family: 'Luckiest Guy';
-	font-size: 20px;
+	font-size: 24px;
 }
 #orderIntro {
 	width: 80%;
@@ -161,18 +191,67 @@ input[type=submit] {
 }
 input[type=submit]:hover {
 	background-color: #D18838;
-	border: solid #C3721B 3px;
+	border: 3px solid #C3721B;
 	color: white;
 }
 /*End of Styling main section pie order form*/
 
 /*Styling main section about info*/
+.infoButtons {
+	width: 910%;
+    margin: 20px 10px;
+}
+button {
+	width: 160px;
+	height: 60px;
+	background-color: #D09154;
+	color: black;
+	border: 3px solid #E2C6A3;
+	font-size: 18px;
+	font-family: 'Luckiest Guy';
+	border-radius: 5px;
+	
+}
+button:hover {
+	background-color: #C3721B;
+	color:white;
+	transition-duration: 0.3s;
+}
+.about {
+	width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.pieSizes {
+	width: 100%;
+    margin: 20px auto 10px;
+    padding: 5px;
+    font-family: 'Roboto';
+    font-size: 20px;
+	display: none;
+}
 .PP {
-	width: 10%; 
-	height: 20%;
-	max-width: 100%;
-	border: 4px solid #b30000;
-	/* margin: 5px 1px; */
+	width: 50%; 
+	height: 30%;
+	border-radius: 5px;
+}
+.picOne {
+	float: right;
+	margin-top: -25px;
+	margin-right: 20px;
+}
+.picTwo {
+	float: left;
+	clear: none;
+    margin-top: 20px;
+}
+.picThree {
+	float: right;
+    margin-top: 30px;
+    margin-left: 10px;
 }
  .socialMtable {
 	 border-spacing: 20px 2px;
@@ -187,12 +266,8 @@ input[type=submit]:hover {
 .icon {
 	width: 50px; 
 	height: 50px;
-	border: 3px solid #b30000;
+	border: 3px solid #D18838;
 	margin: 5px 1px 5px 1px;
 	float: left;
 }
-.description {
-	font-size: 20px;
-	text-align: center;
-  }
 /*social media styling end*/

@@ -4,9 +4,10 @@
 
 <head>
   <title>Ms. Margie's Sweet Potato Pies</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Luckiest+Guy&family=Roboto&display=swap" rel="stylesheet">
   <meta name = "viewpoint" content ="width=device-width, initial-scale=1">
+  <script src="./app.js" async></script>
 </head>
 
 <body>
@@ -15,19 +16,18 @@
 			<!-- <button><a href="#aboutPies">About Our Pies</a></button>
       		<button><a href="#orderPies">Order Our Pies</a></button> -->
 		</div>
-		<div class="diamondTitle">
-		<div id="mainTitle">
-			<h1>Ms. Margie's</h1> 
+		<div class="addCircle one"></div>
+		<div class="outerCircle">
+			<div class="circleTitle">
+				<div id="mainTitle">
+					<h1>Ms. Margie's</h1> 
+				</div>
+				<div id="subTitle">
+					<h2>Sweet Potato Pie</h2>
+				</div>
+			</div>
 		</div>
-		<div id="subTitle">
-			<h2>Sweet Potato Pie</h2>
-		</div>
-	</div>
-	<div class="pgbuttons">
-		<button><a href="#aboutPies">About Our Pies</a></button>
-		<button><a href="#orderPies">Order Our Pies</a></button>
-		<button><a href="#retail">Retail Locations</a></button>
-	</div>
+		<div class="addCircle two"></div>
 	</header>
  
 	<main>
@@ -96,24 +96,38 @@
 		</form>
 	</div>
  <!--About our pies break starts on main page--> 
-	<div class="outerAboutBox">
-		<div class="about" id="aboutPies">
+	<div class="outerInfoBox">
+		<div class="infoButtons">
+			<button id="aboutPiesButton">About Our Pies</button>
+			<button id="pieSizesButton">Pie Sizes</button>
+		</div>
+
+		<div class="about">
 			<h3 class="bodyHeader">About Our Pies</h3>
 			<p class="aboutInfo">Ms. Margie's Sweet Potato Pies are made from an old Southern Family 
 			recipe that has been handed down through the generations. 
 			We use the freshest ingredients to make our pies special for you and your family.</p>
+			<img src="./img/aboutPic3.jpg" alt="Owner" class="PP picOne" />
+			<img src="./img/aboutPic1.jpg" alt="piePhoto" class="PP picTwo" />
+			<img src="./img/aboutPic2.jpg" alt="piePhoto" class="PP picThree" />
+			
 		</div>
 
-		
-
 		<div class= "pieSizes">
-			<p class="description">Ms. Margie's offer three different sizes of pie.<br> From sizes big enough for the whole family, to individual sizes.</p>
-				<img src="img/orderpies.jpg" alt="9 inch pie" class="PP">
-				<p>Enough for the whole family. Take it with you for those holiday gatherings, the family picnics, or as a special treat after dinner.</p>
-				<img src="img/orderpies.jpg" alt="5 inch pie" class="PP">
-				<p>Our 5″ Sweet Potato is just enough for two, but there’s no guilt if you want to eat it all by yourself!</p>
-				<img src="img/orderpies.jpg" alt="3 inch pie" class="PP">
-				<p>Try our 3" Sweet Potato Pie! Just enough for one person, but will leave you wanting for more!</p>
+			<h3 class="bodyHeader">Ms. Margie's pie size options.</h3>
+				<figure>
+					<img src="img/orderpies.jpg" alt="9 inch pie" class="PP">
+					<figcaption>Enough for the whole family. Take it with you for those holiday gatherings, 
+						the family picnics, or as a special treat after dinner.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/orderpies.jpg" alt="5 inch pie" class="PP">
+					<figcaption>Our 5″ Sweet Potato is just enough for two, but there’s no guilt if you want to eat it all by yourself!</figcaption>
+				</figure>
+				<figure>
+					<img src="img/orderpies.jpg" alt="3 inch pie" class="PP">
+					<figcaption>Try our 3" Sweet Potato Pie! Just enough for one person, but will leave you wanting for more!</figcaption>
+				</figure>
 		</div>
 	</div>
 	</main>
@@ -123,7 +137,7 @@
 <!--Facebook and Twitter widget go here-->
 	<footer class="socialMedia">
 		<div>
-			<h3 class="description">Follow us on our Social Media Platforms!</h3>
+			<h3 class="bodyHeader">Follow us on our Social Media Platforms!</h3>
 			<a href="https://www.facebook.com/Ms.Margies.Sweet.Potato.Pies/" target="_blank"><img src="img/facebook_logo.png" alt="Facebook" class="icon" /></a><td>
 			<a href="https://twitter.com/MsMargies" target="_blank"><img src="img/twitter_logo.png" alt="Twitter" class="icon" /></a>
 		</div>
