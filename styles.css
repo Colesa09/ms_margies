@@ -32,11 +32,12 @@ body {
   display: grid;
   width: 100%;
   height: 1600px;
-  grid-template-rows: 20% 60% 20%;
+  grid-template-rows: 22% 63% 15%;
 }
 header {
 	width: 100%;
     grid-column: 1 / 3;
+	margin-left: -10px;
 
 }
 main {
@@ -45,8 +46,12 @@ main {
 	grid-template-columns: 60% 40%;
 }
 footer {
-	width: 100%;
+	display: inline-grid;
+    width: 100%;
     grid-column: 1 / 3;
+    grid-template-columns: 30% 40% 30%;
+	background-color: #C3721B;
+	margin-left: -10px;
 }
 
 /*Top header, title and design styling*/
@@ -112,8 +117,8 @@ footer {
     top: 70px;
 }
 .two {
-	right: 504px;
-	top: 70px;
+	left: 780px;
+    top: 70px;
 }
 /*End of header styling*/
 
@@ -129,6 +134,7 @@ footer {
 .bodyHeader {
 	font-family: 'Luckiest Guy';
 	font-size: 24px;
+	margin: 10px 0px;
 }
 #orderIntro {
 	width: 80%;
@@ -210,13 +216,18 @@ button {
 	font-size: 18px;
 	font-family: 'Luckiest Guy';
 	border-radius: 5px;
+	margin: 10px 15px;
 	
+}
+button:focus {
+	box-shadow: -10px 10px 10px  #D09154;
 }
 button:hover {
 	background-color: #C3721B;
 	color:white;
 	transition-duration: 0.3s;
 }
+
 .about {
 	width: 100%;
     margin: 10px auto;
@@ -253,21 +264,32 @@ button:hover {
     margin-top: 30px;
     margin-left: 10px;
 }
- .socialMtable {
-	 border-spacing: 20px 2px;
- }
 /*End of Styling main section about info*/
 
 /*End of page social media styling*/
-.companyInfo {
-		text-align:right;
+.socialDiv {
+	margin: 10px 20px;
+	font-family: 'Roboto';
+	align-self: center;
 }
-
 .icon {
 	width: 50px; 
 	height: 50px;
 	border: 3px solid #D18838;
-	margin: 5px 1px 5px 1px;
-	float: left;
+	margin: 5px 10px;
 }
+.retailDiv{
+	margin: 10px auto;
+	font-family: 'Roboto';
+	font-size: 18px;
+	align-self: center;
+}
+.coDiv {
+	margin: 10px auto;
+	font-family: 'Roboto';
+	font-size: 18px;
+	align-self: center;
+}
+
+
 /*social media styling end*/
