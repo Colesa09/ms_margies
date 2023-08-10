@@ -4,7 +4,7 @@ const aboutDiv = document.querySelector('.about');
 const pieSizeDiv = document.querySelector('.pieSizes');
 
 aboutPieButton.addEventListener('click', function() {
-    aboutDiv.style.display = 'block';
+    aboutDiv.style.display = '';
     pieSizeDiv.style.display = 'none';
 
 });

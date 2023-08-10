@@ -1,0 +1,107 @@
+@media only screen and (min-width: 240px) and (max-width: 760px) {
+    /*Body styling*/
+    body {
+        height: 1700px;
+        grid-template-rows: 11% 65% 15%;
+        grid-template-columns: 100%;
+      }
+    main {
+        grid-template-rows: 70% 30%;
+        grid-template-columns: 100%;
+    }
+    footer {
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+    /*Top header, title and design styling*/
+    .backSquare {
+        height: 70px;
+        top: 60px;
+    }
+    .logoGraphic {
+        height: 300px;
+        top: -77px;
+        left: 20px;
+    }
+    #logoBackground {
+        width: 300px;
+        height: auto;
+    }
+    .logoTitle {
+        top: 85px;
+    }
+    #mainTitle {
+       
+        font-size: 24px;
+       
+    }
+    #subTitle {
+        
+        font-size: 18px;
+        
+    }
+    /*Styling for main section pie order form */
+    .bodyHeader {
+        font-size: 16px;
+        text-align: center;
+    }
+    .pieOrderForm {
+        width: 100%;
+    }
+    .about {
+        width: 90%;
+    } 
+    .pSizeNum {
+        margin-right: -40px;
+        margin-left: 18px;
+    }
+    #orderIntro {
+        width: 90%;
+        font-size: 14px;
+    }
+    label {
+        display: inline-block;
+        font-size: 12px;
+    }
+    input[type=submit] {
+        width: 40%;
+        height: 55px;
+        font-size: 16px;
+    }
+    /*Styling main section about and pie Size info*/
+    .infoButtons {
+        display: none;
+    }
+    .about {
+        font-size: 16px;
+    }
+    .aboutpic {
+        width: 40%; 
+
+    }
+    .pieSizes {
+       display: none;  
+    }
+    /*End of page social media styling*/
+    
+    .socialDiv {
+        grid-column: 1 / span 2;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .retailDiv{
+        font-size: 12px;
+    }
+    .coDiv {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    button {
+        width: 135px;
+        height: 60px;
+        font-size: 16px;
+    }
+}

@@ -55,46 +55,6 @@ footer {
 }
 
 /*Top header, title and design styling*/
-#mainTitle {
-	font-family: 'Luckiest Guy';
-    font-size: 22px;
-    width: 300px;
-    position: absolute;
-    top: 82px;
-    z-index: 4;
-    margin-left: 20px;
-}
-#subTitle {
-	font-family: 'Great Vibes';
-    width: 200px;
-    font-size: 20px;
-    position: absolute;
-    top: 148px;
-    left: 80px;
-    transform: rotate(-10deg);
-    z-index: 4;
-}
-.outerCircle {
-	width: 350px;
-	height: 330px;
-	border-radius: 50%;
-	background-color: #E2C6A3;
-	margin: 0 auto;
-	position: absolute;
-	z-index: 1;
-	left: 550px;
-}
-.circleTitle {
-	width: 300px;
-    height: 300px;
-    background-color: #D09154;
-    border-radius: 50%;
-    position: relative;
-    top: 17px;
-    right: -26px;
-	z-index: 3;
-	
-}
 .backSquare {
 	width: 100%;
 	height: 100px;
@@ -103,22 +63,37 @@ footer {
 	top: 120px;
     z-index: -1;
 }
-.addCircle {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	background-color: #D18838;
-	position: absolute;
-    z-index: -1;
-
+.logoGraphic {
+	width: 100%;
+    height: 500px;
+    text-align: center;
+    position: absolute;
+    top: -175px;
 }
-.one {
-	left: 473px;
-    top: 70px;
+#logoBackground {
+	width: 600px;
+    height: auto;
 }
-.two {
-	left: 780px;
-    top: 70px;
+.logoTitle {
+	width: 100%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    top: 173px;
+}
+#mainTitle {
+	font-family: 'Luckiest Guy';
+    font-size: 48px;
+    width: auto;
+	margin: 0px;
+}
+#subTitle {
+	font-family: 'Great Vibes';
+    width: auto;
+    font-size: 36px;
+	margin: 0px;
+	margin-top: 10px;
+    transform: rotate(-10deg);
 }
 /*End of header styling*/
 
@@ -202,10 +177,14 @@ input[type=submit]:hover {
 }
 /*End of Styling main section pie order form*/
 
-/*Styling main section about info*/
+/*Styling main section about and pie Size info*/
+.outerInfoBox {
+	width: 100%;
+}
 .infoButtons {
-	width: 910%;
+	width: 100%;
     margin: 20px 10px;
+	text-align: center;
 }
 button {
 	width: 160px;
@@ -233,7 +212,8 @@ button:hover {
     margin: 10px auto;
     padding: 5px;
     font-family: 'Roboto';
-    font-size: 20px;
+    font-size: 18px;
+	text-align: center;
 }
 
 .pieSizes {
@@ -241,28 +221,29 @@ button:hover {
     margin: 20px auto 10px;
     padding: 5px;
     font-family: 'Roboto';
-    font-size: 20px;
-	display: none;
+    font-size: 16px;
+	text-align: center;
+    display: none;
+    
 }
-.PP {
-	width: 50%; 
-	height: 30%;
+.aboutpic {
+	width: 65%; 
+	height: auto;
 	border-radius: 5px;
 }
-.picOne {
-	float: right;
-	margin-top: -25px;
-	margin-right: 20px;
+
+
+.pie9 {
+	width: 250px;
+	height: auto;
 }
-.picTwo {
-	float: left;
-	clear: none;
-    margin-top: 20px;
+.pie5 {
+	width: 180px;
+	height: auto;
 }
-.picThree {
-	float: right;
-    margin-top: 30px;
-    margin-left: 10px;
+.pie3 {
+	width: 150px;
+	height: auto;
 }
 /*End of Styling main section about info*/
 
@@ -290,6 +271,4 @@ button:hover {
 	font-size: 18px;
 	align-self: center;
 }
-
-
 /*social media styling end*/
